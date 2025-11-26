@@ -1,4 +1,4 @@
-import { Spinner, ListGroup } from 'react-bootstrap';
+import { Spinner, ListGroup, Alert } from 'react-bootstrap';
 import { useEffect, useState } from 'react';
 
 const MovieComments = (props) => {
@@ -31,9 +31,7 @@ const MovieComments = (props) => {
       });
   };
 
-  useEffect(() => {
-    getMovieComments();
-  }, [movieID]);
+  useEffect(getMovieComments, [movieID]);
 
   return (
     <>
