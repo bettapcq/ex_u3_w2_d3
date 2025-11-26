@@ -27,17 +27,19 @@ function App() {
                     saga="american pie"
                     sagaTitle="The American Pie saga"
                     type="movie"
+                    key="1"
                   />
-                  <MoviesList saga="matrix" sagaTitle="The Matrix saga" />
                   <MoviesList
                     saga="hunger games"
                     sagaTitle="The Hunger Games saga"
                     type="movie"
+                    key="2"
                   />
                   <MoviesList
                     saga="scary movie"
                     sagaTitle="The Scary Movie saga"
                     type="movie"
+                    key="3"
                   />
                 </Row>
               </>
@@ -54,6 +56,13 @@ function App() {
                     saga="stranger things"
                     sagaTitle="Stranger Things"
                     type="series"
+                    key="4"
+                  />
+                  <MoviesList
+                    saga="the witcher"
+                    sagaTitle="The Witcher"
+                    type="series"
+                    key="5"
                   />
                 </Row>
               </>
