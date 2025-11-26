@@ -1,0 +1,147 @@
+  <main>
+      <div class="container w-50">
+        <div class="row flex-column">
+          <div class="col border-bottom border-1 border-secondary mb-3">
+            <h1>Edit Profile</h1>
+          </div>
+          <div class="col border-bottom border-1 border-secondary mb-3">
+            <div class="row row-cols-1 row-cols-md-2 mb-3">
+              <div class="col">
+                <img class="img-fluid" src="./assets/avatar.png" />
+              </div>
+              <div class="col">
+                <div class="row flex-column g-2">
+                  <div class="col">
+                    <div class="row flex-column">
+                      <div class="col mb-2">
+                        <input
+                          class="form-control"
+                          type="text"
+                          value="Strive student"
+                          aria-label="readonly input example"
+                          readonly
+                        />
+                      </div>
+                      <div
+                        id="language"
+                        class="col border-bottom border-1 border-secondary pb-2 mb-2"
+                      >
+                        <label class="text-secondary mb-1">Language:</label>
+                        <div class="dropdown no-radius-dropdown">
+                          <button
+                            class="btn btn-outline-light dropdown-toggle"
+                            type="button"
+                            id="dropdownMenuButton"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          ></button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuButton"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#">English</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Italian</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Spanish</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col border-bottom border-1 border-secondary pb-2 mb-3"
+                  >
+                    <div class="row flex-column g-2">
+                      <div class="col">
+                        <label class="text-secondary mb-1"
+                          >Maturity SettiNgs:</label
+                        >
+                      </div>
+                      <div class="col">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          disabled
+                        >
+                          ALL MATURITY RATINGS
+                        </button>
+                      </div>
+                      <div class="col">
+                        <p>
+                          Show titles of
+                          <strong>all maturity ratings</strong> for this profile
+                        </p>
+                      </div>
+                      <div class="col">
+                        <button type="button" class="btn btn-outline-secondary">
+                          EDIT
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    id="check-list"
+                    class="col border-bottom border-1 border-secondary pb-2 mb-3"
+                  >
+                    <div class="col">
+                      <label class="text-secondary mb-1"
+                        >Autoplay controls</label
+                      >
+                    </div>
+                    <div class="col">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkDefault"
+                        />
+                        <label class="form-check-label" for="checkDefault">
+                          Autoplay next episode in a series on all devices.
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkChecked"
+                          checked
+                        />
+                        <label class="form-check-label" for="checkChecked">
+                          Autoplay prevews while browsing on all devices.
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="col">
+                <button type="button" class="btn btn-outline-secondary">
+                  SAVE
+                </button>
+              </div>
+              <div class="col">
+                <button type="button" class="btn btn-outline-secondary">
+                  CANCEL
+                </button>
+              </div>
+              <div class="col">
+                <button type="button" class="btn btn-outline-secondary">
+                  DELETE PROFILE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
