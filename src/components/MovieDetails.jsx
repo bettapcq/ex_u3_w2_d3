@@ -1,9 +1,10 @@
 import { Alert, Card, Spinner, Container, Row, Col } from 'react-bootstrap';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import MovieComments from './movieComments';
 
 const MovieDetails = () => {
-  const URL = 'http://www.omdbapi.com/?apikey=2dd86ad4&i=';
+  const movieURL = 'http://www.omdbapi.com/?apikey=2dd86ad4&i=';
   const params = useParams();
   const movieID = params.movieID;
   const [movieToShow, setMovieToShow] = useState([]);
@@ -11,7 +12,7 @@ const MovieDetails = () => {
   const [error, setError] = useState(false);
 
   const getDetails = () => {
-    fetch(URL + movieID)
+    fetch(movieURL + movieID)
       .then((res) => {
         if (res.ok) {
           return res.json();
@@ -51,6 +52,7 @@ const MovieDetails = () => {
                     {movieToShow.Year} - {movieToShow.Runtime}
                   </Card.Text>
                   <Card.Text>{movieToShow.Plot}</Card.Text>
+                  <MovieComments movieID={movieID}/>
                 </Card.Body>
               </>
             )}
